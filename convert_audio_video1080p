@@ -1,0 +1,53 @@
+::[FFmpeg convert_video_1_0 softy_plug]
+
+@echo off
+mkdir out
+for %%i in (*.mp3) do (
+  ffmpeg -i "%%i" -c:v libx264 -preset slow -crf 22 -c:a aac -b:a 192k -ac 2 -ar 44100 -vf scale=-2:1080 "out/%%~ni.mp4"
+)
+
+for %%i in (*.wav) do (
+  ffmpeg -i "%%i" -c:v libx264 -preset slow -crf 22 -c:a aac -b:a 192k -ac 2 -ar 44100 -vf scale=-2:1080 "out/%%~ni.mp4"
+)
+
+for %%i in (*.ogg) do (
+  ffmpeg -i "%%i" -c:v libx264 -preset slow -crf 22 -c:a aac -b:a 192k -ac 2 -ar 44100 -vf scale=-2:1080 "out/%%~ni.mp4"
+)
+
+for %%i in (*.aiff) do (
+  ffmpeg -i "%%i" -c:v libx264 -preset slow -crf 22 -c:a aac -b:a 192k -ac 2 -ar 44100 -vf scale=-2:1080 "out/%%~ni.mp4"
+)
+
+for %%i in (*.flac) do (
+  ffmpeg -i "%%i" -c:v libx264 -preset slow -crf 22 -c:a aac -b:a 192k -ac 2 -ar 44100 -vf scale=-2:1080 "out/%%~ni.mp4"
+)
+
+for %%i in (*.dsd) do (
+  ffmpeg -i "%%i" -c:v libx264 -preset slow -crf 22 -c:a aac -b:a 192k -ac 2 -ar 44100 -vf scale=-2:1080 "out/%%~ni.mp4"
+)
+
+for %%i in (*.mqa) do (
+  ffmpeg -i "%%i" -c:v libx264 -preset slow -crf 22 -c:a aac -b:a 192k -ac 2 -ar 44100 -vf scale=-2:1080 "out/%%~ni.mp4"
+)
+
+for %%i in (*.ogg) do (
+  ffmpeg -i "%%i" -c:v libx264 -preset slow -crf 22 -c:a aac -b:a 192k -ac 2 -ar 44100 -vf scale=-2:1080 "out/%%~ni.mp4"
+)
+
+for %%i in (*.wma) do (
+  ffmpeg -i "%%i" -c:v libx264 -preset slow -crf 22 -c:a aac -b:a 192k -ac 2 -ar 44100 -vf scale=-2:1080 "out/%%~ni.mp4"
+)
+
+for %%i in (*.aac) do (
+  ffmpeg -i "%%i" -c:v libx264 -preset slow -crf 22 -c:a aac -b:a 192k -ac 2 -ar 44100 -vf scale=-2:1080 "out/%%~ni.mp4"
+)
+
+for %%i in (*.m4a) do (
+  ffmpeg -i "%%i" -c:v libx264 -preset slow -crf 22 -c:a aac -b:a 192k -ac 2 -ar 44100 -vf scale=-2:1080 "out/%%~ni.mp4"
+)
+
+for %%i in (*.raw) do (
+  ffmpeg -i "%%i" -c:v libx264 -preset veryslow -crf 22 -c:a aac -b:a 192k -ac 2 -ar 44100 -vf scale=-2:1080 "out/%%~ni.mp4"
+)
+
+::[FFmpeg convert_video_1_0 softy_plug]
